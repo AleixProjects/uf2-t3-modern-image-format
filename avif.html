@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li>
+          <a
+            href="index.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="logotip.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Logotip</a
+          >
+        </li>
+        <li>
+          <a
+            href="pelicans.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Pelicans</a
+          >
+        </li>
+        <li>
+          <a
+            href="lloros.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Lloros</a
+          >
+        </li>
+        <li>
+          <a
+            href="degradat.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Degradat</a
+          >
+        </li>
+        <li>
+          <a
+            href="WebP.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >WebP</a
+          >
+        </li>
+        <li>
+          <a
+            href="avif.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Avif</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <table class="table-fixed w-full text-center">
+        <thead>
+          <tr>
+            <th>Nom imatge</th>
+            <th>Mida Original</th>
+            <th>WebP (Estalvi %)</th>
+            <th>AVIF (Estalvi %)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>sunset.jpg</td>
+            <td>329.10 KB</td>
+            <td>77.15 KB (77%)</td>
+            <td>23.28 KB (93%)</td>
+          </tr>
+          <tr>
+            <td>forest.jpg</td>
+            <td>2056.07 KB</td>
+            <td>852.53 KB (59%)</td>
+            <td>472.76 KB (77%)</td>
+          </tr>
+          <tr>
+            <td>playground.jpg</td>
+            <td>1228.75 KB</td>
+            <td>449.77 KB (63%)</td>
+            <td>238.74 KB (81%)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h1 class="text-2xl font-bold mb-4">Analisi</h1>
+        <!-- <h2 class="text-lg font-semibold mb-2">
+          ¿Què passa amb el fitxer GIF? Podem utilitzar WebP per reemplaçar-lo?
+        </h2> -->
+        <p>
+          Les imatges WebP i AVIF tenen menys soroll que les jpeg, de fet en algunes parts de les imatges es poden veure fins i tot millor, això si en algunes altres parts i detalls d'objectes minuciosos es reflexen parts que perden bastant detall, pero quan s'observen des de ben aprop. 
+        </p>
+        <p>Entre WebP i AVIF les diferencies es noten per exemple en la fidelitat de les textures, en parts d'objectes més naturals noto que WebP és més fidel, en canvi en objectes més artificials com terres, AVIF les respecta més. Per tamanys AVIF és molt més potent ja que la sol reduir un 20% aprox. més que WebP.</p>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <img src="ex_images/exavif/sunset.jpg" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/sunset-30.webp" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/sunset-30.avif" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/forest.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/forest-30.webp" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/forest-30.avif" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/playground.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/playground-30.webp" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/exavif/playground-30.avif" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

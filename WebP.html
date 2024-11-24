@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li>
+          <a
+            href="index.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="logotip.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Logotip</a
+          >
+        </li>
+        <li>
+          <a
+            href="pelicans.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Pelicans</a
+          >
+        </li>
+        <li>
+          <a
+            href="lloros.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Lloros</a
+          >
+        </li>
+        <li>
+          <a
+            href="degradat.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Degradat</a
+          >
+        </li>
+        <li>
+          <a
+            href="WebP.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >WebP</a
+          >
+        </li>
+        <li>
+          <a
+            href="avif.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Avif</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <table class="table-fixed w-full text-center">
+        <thead>
+          <tr>
+            <th>Nom imatge</th>
+            <th>Mida Original</th>
+            <th>JPG (Estalvi %)</th>
+            <th>WebP (Estalvi %)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>logotip.png</td>
+            <td>204.04 KB</td>
+            <td>47.97 KB (80,4%)</td>
+            <td>204.04 KB (17%)</td>
+          </tr>
+          <tr>
+            <td>pelicans.jpg</td>
+            <td>488.34 KB</td>
+            <td>84.63 KB (83%)</td>
+            <td>45.48 KB (91%)</td>
+          </tr>
+          <tr>
+            <td>lloros.jpg</td>
+            <td>549.38 KB</td>
+            <td>91.13 KB (83%)</td>
+            <td>58.64 KB (89%)</td>
+          </tr>
+          <tr>
+            <td>degradat.png</td>
+            <td>2626.80 KB</td>
+            <td>n/a</td>
+            <td>973.36 KB (63%)</td>
+          </tr>
+          <tr>
+            <td>therock.gif</td>
+            <td>3044.14 KB</td>
+            <td>n/a</td>
+            <td>2255.60 KB (25.9%)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <img src="ex_images/logotip.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/logotip-20.jpg" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/logotip-sl-100.webp"
+          alt="Example 1"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans-25.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans-20.webp" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/lloros.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/lloros-20.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/lloros-15.webp" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/degradat.png" alt="Example 4" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/degradat-sl-100.webp"
+          alt="Example 4"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div></div>
+      <div>
+        <img src="ex_images/therock.gif" alt="Example 5" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/therock.webp" alt="Example 5" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4">Analisi</h1>
+        <h2 class="text-lg font-semibold mb-2">
+          ¿Què passa amb el fitxer GIF? Podem utilitzar WebP per reemplaçar-lo?
+        </h2>
+        <p>
+          Podem observar una considerable rebiaxa de pes i no es visualitzen
+          perdues de qualitat. WebP es podria considerar amb totalitat un
+          reemplaç segur.
+        </p>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

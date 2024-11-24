@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li>
+          <a
+            href="index.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="logotip.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Logotip</a
+          >
+        </li>
+        <li>
+          <a
+            href="pelicans.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Pelicans</a
+          >
+        </li>
+        <li>
+          <a
+            href="lloros.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Lloros</a
+          >
+        </li>
+        <li>
+          <a
+            href="degradat.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Degradat</a
+          >
+        </li>
+        <li>
+          <a
+            href="WebP.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >WebP</a
+          >
+        </li>
+        <li>
+          <a
+            href="avif.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Avif</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold mb-4">Analisi</h1>
+      <h2 class="text-lg font-semibold mb-2">
+        Quin format és el més òptim per aquest tipus d’imatge i per què?
+      </h2>
+      <p class="text-gray-700">
+        Evidentment el format d'imatge únic que hauria de tenir aquest tipus
+        d'imatge és .png. Respecta les transparències i en comparació
+        calitat/pes és molt més nítida que .gif
+      </p>
+      <br />
+      <h2 class="text-lg font-semibold mb-2">
+        Es podria reduir encara més la mida? Perdria qualitat?
+      </h2>
+      <p class="text-gray-700">
+        És pot reduir més la mida i encara seria capaç de respectar la qualitat
+        original.
+      </p>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="ex_images/logotip.png" alt="Original" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/logotip-100.jpg"
+          alt="Compressió: 100%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/logotip-50.jpg"
+          alt="Compressió: 50%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/logotip-10.jpg"
+          alt="Compressió: 10%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/logotip.gif" alt="Gifed" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

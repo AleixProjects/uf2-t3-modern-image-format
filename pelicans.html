@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li>
+          <a
+            href="index.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="logotip.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Logotip</a
+          >
+        </li>
+        <li>
+          <a
+            href="pelicans.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Pelicans</a
+          >
+        </li>
+        <li>
+          <a
+            href="lloros.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Lloros</a
+          >
+        </li>
+        <li>
+          <a
+            href="degradat.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Degradat</a
+          >
+        </li>
+        <li>
+          <a
+            href="WebP.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >WebP</a
+          >
+        </li>
+        <li>
+          <a
+            href="avif.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Avif</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold mb-4">Analisi</h1>
+      <h2 class="text-lg font-semibold mb-2">
+        Quin format és el més òptim per aquest tipus d’imatge i per què?
+      </h2>
+      <p class="text-gray-700">
+        JPEG sens dubte, amb ella pots jugar amb la compressió per tal de reduir
+        la mida.
+      </p>
+      <br />
+      <h2 class="text-lg font-semibold mb-2">
+        Amb quin nivell de compressió no es perd qualitat visible?
+      </h2>
+      <p class="text-gray-700">
+        Amb un 50% de compressió encara no és visible perdues de qualitat en la
+        imatge.
+      </p>
+      <br />
+      <h2 class="text-lg font-semibold mb-2">
+        Podem reduir la mida encara més sense perdre qualitat?
+      </h2>
+      <p class="text-gray-700">
+        Si, crec que seria a partir de 30% de compressió que podriem veure
+        perdues clares de qualitat
+      </p>
+      <br />
+      <h2 class="text-lg font-semibold mb-2">
+        Què passaria si desem la imatge diverses vegades en format JPEG?
+      </h2>
+      <p class="text-gray-700">
+        Perdrem més qualitat de la que perdriem si ho fem d'una mateixa desada,
+        a causa de la compressió perdrem menys qualitat si fem una desada de 50%
+        a si fem dues de 25%
+      </p>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="ex_images/pelicans.jpg" alt="Original" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/pelicans-100.jpg"
+          alt="Compressió: 100%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/pelicans-50.jpg"
+          alt="Compressió: 50%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="ex_images/pelicans-10.jpg"
+          alt="Compressió: 10%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans.png" alt="Pnged" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans.gif" alt="Gifed" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

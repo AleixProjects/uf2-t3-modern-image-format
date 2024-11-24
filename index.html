@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li>
+          <a
+            href="index.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="logotip.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Logotip</a
+          >
+        </li>
+        <li>
+          <a
+            href="pelicans.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Pelicans</a
+          >
+        </li>
+        <li>
+          <a
+            href="lloros.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Lloros</a
+          >
+        </li>
+        <li>
+          <a
+            href="degradat.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Degradat</a
+          >
+        </li>
+        <li>
+          <a
+            href="WebP.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >WebP</a
+          >
+        </li>
+        <li>
+          <a
+            href="avif.html"
+            class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+            >Avif</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold mb-4">Lighthouse</h1>
+      <h2 class="text-lg font-semibold mb-2">
+        Què t’indica Lighthouse sobre el rendiment d’imatges de les teves
+        pàgines? Quins són els principals problemes? Quines recomanacions
+        ofereix?
+      </h2>
+      <p class="text-gray-700">
+        Lighthouse recomana els formats optims de les imatges que tenim com PNG
+        o JPEG i les recomana canviar per uns formats WebP o AVIF. També
+        recomana abaixar el tamany per les imatges. Codificar les imatges més
+        eficaçment.
+      </p>
+      <br />
+      <h2 class="text-lg font-semibold mb-2">
+        Simula una connexió lenta 3G i analitza la càrrega de les imatges. Què
+        observes?
+      </h2>
+      <p class="text-gray-700"></p>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="ex_images/logotip.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/pelicans.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/lloros.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="ex_images/degradat.png" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
